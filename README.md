@@ -1,10 +1,10 @@
 # Linux & DevOps Practice
 # Repository documenting my hands-on Linux, Git, and DevOps learning journey.
 
-echo "=== Daily Practice ==="
+"=== Daily Practice ==="
 
-echo "### Day 1: Learning Linux Commands and Pushing to GitHub"
-echo "Objective: Learn basic Linux commands, practice them, and push to GitHub."
+ "### Day 1: Learning Linux Commands and Pushing to GitHub"
+ "Objective: Learn basic Linux commands, practice them, and push to GitHub."
 
 # Linux commands practiced
 echo "Commands:"
