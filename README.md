@@ -80,5 +80,52 @@ ssh -T git@github.com
 #After this, I successfully pushed all my Day 1 practice to GitHub.
 ## Notes
 
+Day 2: File Viewing and Editing Practice
+
+Objective: Learn commands to view and edit files in Linux.
+
+Commands Practiced:
+
+cat – view file content
+
+less – scroll through file content
+
+head – view first lines
+
+tail – view last lines
+
+nano – edit files in terminal
+
+wc – count lines, words, bytes
+
+Pipes | – combine commands
+
+Example Practice:
+
+# Create a folder for Day 2
+mkdir devops_day2
+cd devops_day2
+
+# Create a practice file
+nano day2_practice.txt
+
+# Add content about Linux commands and practice notes
+# Example content:
+# Linux is a powerful operating system.
+# It is widely used in servers and DevOps.
+# Commands practiced today: cat, less, head, tail, nano, wc, pipes (|)
+
+# Save and exit (Ctrl+O, Enter, Ctrl+X)
+
+Check and view file content:
+
+cat day2_practice.txt
+less day2_practice.txt
+head day2_practice.txt
+tail day2_practice.txt
+tail -f day2_practice.txt  # real-time monitoring
+wc day2_practice.txt        # line/word/byte count
+cat day2_practice.txt | wc -l  # count lines via pipe
+
 - Each folder contains `notes.txt`, `tasks.txt`, and scripts for that day.
 - This README will be updated as I continue learning.
