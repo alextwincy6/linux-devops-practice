@@ -1,0 +1,59 @@
+Day 2 - File Viewing & Editing
+
+Folder: devops_day2/
+Files: day2_practice.txt
+
+Commands practiced:
+
+cat – display file content
+
+less – view content one screen at a time
+
+head – view first lines of a file
+
+tail – view last lines of a file
+
+tail -f – follow a file for live updates
+
+nano – edit files in terminal
+
+wc – count lines, words, characters
+
+Pipes | – combine commands
+
+
+Example:
+
+
+# Day 2 - File Viewing & Editing Practice
+# ---------------------------------------
+
+# Display the full content of a file
+cat day1_practice.txt       # Shows everything in day1_practice.txt
+
+# View file content one screen at a time
+less day1_practice.txt      # Use Q to quit
+
+# View first 10 lines of a file
+head day1_practice.txt      # Can use -n to specify number of lines
+
+# View last 10 lines of a file
+tail day1_practice.txt      # Can use -n to specify number of lines
+
+# Follow a file in real-time (like logs)
+tail -f log.txt             # Use Ctrl+C to stop
+
+# Edit a file in terminal
+nano day2_practice.txt      # Edit, then Ctrl+O to save, Ctrl+X to exit
+
+# Count lines, words, and characters in a file
+wc day2_practice.txt        # Outputs lines words characters filename
+
+# Combine commands using a pipe
+cat day2_practice.txt | wc -l   # Counts number of lines in the file
+
+# Notes:
+# Practicing these commands helps understand file handling in Linux.
+# This file keeps track of all Day 2 exercises.
+# After practicing, I pushed my learning to GitHub.
+
