@@ -80,11 +80,11 @@ ssh -T git@github.com
 #After this, I successfully pushed all my Day 1 practice to GitHub.
 ## Notes
 
-Day 2: File Viewing and Editing Practice
+## Day 2: File Viewing and Editing Practice
 
-Objective: Learn commands to view and edit files in Linux.
+**Objective:** Learn commands to view and edit files in Linux.
 
-Commands Practiced:
+##Commands Practiced:
 
 cat – view file content
 
