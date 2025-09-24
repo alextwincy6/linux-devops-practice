@@ -80,52 +80,43 @@ ssh -T git@github.com
 #After this, I successfully pushed all my Day 1 practice to GitHub.
 ## Notes
 
-## Day 2: File Viewing and Editing Practice
+---
 
-**Objective:** Learn commands to view and edit files in Linux.
+### **Day 2: File Viewing and Editing Practice**
 
-##Commands Practiced:
+**Objective:** Learn and practice commands to view, read, and edit files in the terminal.
 
-cat – view file content
+#### 📂 Commands Practiced
+- `cat` – view file content  
+- `less` – view long files page-by-page (`q` to quit)  
+- `head -n <N>` – show the first N lines  
+- `tail -n <N>` – show the last N lines  
+- `tail -f` – follow file updates in real time (quit with `Ctrl+C`)  
+- `nano` – simple terminal editor (save with `Ctrl+O`, exit `Ctrl+X`)  
+- `wc` – count lines/words/bytes (`wc -l`, `wc -w`)  
+- `|` (pipe) – pass output from one command to another
 
-less – scroll through file content
-
-head – view first lines
-
-tail – view last lines
-
-nano – edit files in terminal
-
-wc – count lines, words, bytes
-
-Pipes | – combine commands
-
-Example Practice:
-
-# Create a folder for Day 2
-mkdir devops_day2
+#### 📄 Example Practice (run these in a terminal)
+```bash
+# create folder and file
+mkdir -p devops_day2
 cd devops_day2
+nano day2_practice.txt    # paste/enter the sample content, save & exit
 
-# Create a practice file
-nano day2_practice.txt
-
-# Add content about Linux commands and practice notes
-# Example content:
-# Linux is a powerful operating system.
-# It is widely used in servers and DevOps.
-# Commands practiced today: cat, less, head, tail, nano, wc, pipes (|)
-
-# Save and exit (Ctrl+O, Enter, Ctrl+X)
-
-Check and view file content:
-
+# view and inspect
 cat day2_practice.txt
 less day2_practice.txt
-head day2_practice.txt
-tail day2_practice.txt
-tail -f day2_practice.txt  # real-time monitoring
-wc day2_practice.txt        # line/word/byte count
-cat day2_practice.txt | wc -l  # count lines via pipe
+head -n 5 day2_practice.txt
+tail -n 5 day2_practice.txt
+
+# follow updates live (open two terminals to test)
+tail -f day2_practice.txt
+
+# counts
+wc day2_practice.txt
+cat day2_practice.txt | wc -l
+
+
 
 - Each folder contains `notes.txt`, `tasks.txt`, and scripts for that day.
 - This README will be updated as I continue learning.
