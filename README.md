@@ -7,41 +7,49 @@
  "Objective: Learn basic Linux commands, practice them, and push to GitHub."
 
 # Linux commands practiced
-echo "Commands:"
-echo "pwd        # check current directory"
-echo "mkdir      # create directories"
-echo "cd         # navigate directories"
-echo "touch      # create files"
-echo "ls / la    # list files"
-echo "echo 'text' > file   # write text into a file"
-echo "cp         # copy files"
-echo "mv         # rename or move files"
-echo "rm         # remove files"
+pwd        # check current directory
+mkdir      # create directories
+cd         # navigate directories
+touch      # create files
+ls / la    # list files
+echo "text" > file   # write text into a file
+cp         # copy files
+mv         # rename or move files
+rm         # remove files
 
 # Example Practice
-echo "Example Practice:"
-echo "# Create a folder for Day 1"
+# Create a folder for Day 1
 mkdir devops_day1
 cd devops_day1
 
+# Create files
 touch notes.txt tasks.txt
-echo "Hello, this is my first Linux command practice" > notes.txt
-cp notes.txt notes_backup.txt
-mv tasks.txt todo.txt
-# rm old_file.txt
 
-# Git Commands
+# Add content to notes
+echo "Hello, this is my first Linux command practice" > notes.txt
+
+# Copy notes
+cp notes.txt notes_backup.txt
+
+# Rename tasks file
+mv tasks.txt todo.txt
+
+# Remove a file
+rm old_file.txt
+
+# Git commands
 git init
 git status
 git add .
 git commit -m "Add Day 1 Linux command practice"
 git branch -M main
 git remote add origin git@github.com:alextwincy6/linux-devops-practice.git
-# git push -u origin main
+git push -u origin main
 
 # SSH Key Setup
 ssh-keygen -t ed25519 -C "alextwincy6@gmail.com"
 ssh -T git@github.com
+
 
 echo "=== Day 2: File Viewing and Editing Practice ==="
 echo "Objective: Learn commands to view, read, and edit files in Linux."
