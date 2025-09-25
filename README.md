@@ -62,24 +62,24 @@ This folder documents my Day 2 hands-on learning for Linux file viewing and edit
 
 #### Example
 # Create a folder and file for Day 2
-mkdir -p devops_day2
-cd devops_day2
-nano day2_practice.txt
+- mkdir -p devops_day2
+- cd devops_day2
+- nano day2_practice.txt
 
 # Add content about Linux commands and practice notes
- "Linux is a powerful operating system.
-It is widely used in servers and DevOps.
-Commands practiced today: cat, less, head, tail, nano, wc, pipes (|)" > day2_practice.txt
+ - "Linux is a powerful operating system.
+- It is widely used in servers and DevOps.
+- Commands practiced today: cat, less, head, tail, nano, wc, pipes (|)" > day2_practice.txt
 
 # Viewing and inspecting file
-cat day2_practice.txt
-less day2_practice.txt
-head -n 5 day2_practice.txt
-tail -n 5 day2_practice.txt
+- cat day2_practice.txt
+- less day2_practice.txt
+- head -n 5 day2_practice.txt
+- tail -n 5 day2_practice.txt
 
 # Follow updates live
-tail -f day2_practice.txt
+- tail -f day2_practice.txt
 
 # Count lines, words, bytes
-wc day2_practice.txt
-cat day2_practice.txt | wc -l
+- wc day2_practice.txt
+- cat day2_practice.txt | wc -l
