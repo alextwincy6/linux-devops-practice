@@ -20,7 +20,7 @@ This repository documents my hands-on Linux, Git, and DevOps learning journey, t
 - `rm` – remove files
 
 #### Example Practice
-```bash
+
 # Create a folder for Day 1
 mkdir devops_day1
 cd devops_day1
