@@ -67,7 +67,7 @@ cd devops_day2
 nano day2_practice.txt
 
 # Add content about Linux commands and practice notes
-echo "Linux is a powerful operating system.
+ "Linux is a powerful operating system.
 It is widely used in servers and DevOps.
 Commands practiced today: cat, less, head, tail, nano, wc, pipes (|)" > day2_practice.txt
 
