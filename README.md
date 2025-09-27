@@ -119,3 +119,61 @@ Learn Linux file permissions, ownership, and groups commands.
 - `r` = read, `w` = write, `x` = execute
 - File permissions format: owner | group | others
 - Groups allow multiple users to share access
+
+## Day 4: Text Processing Essentials
+
+** Objective: Learn and practice Linux text processing commands like grep, cut, sort, uniq, wc, tr, head, tail.
+
+## 📂 Commands Practiced
+
+- grep <pattern> <file> – search for a pattern in a file
+
+- cut -d<delimiter> -f<fields> <file> – extract specific columns
+
+- sort <file> – sort lines alphabetically
+
+- uniq -c <file> – count unique lines (use with sort)
+
+- wc <file> – count lines, words, and bytes
+
+- tr <set1> <set2> – translate or delete characters
+
+- head -n <N> – show the first N lines
+
+- tail -n <N> – show the last N lines
+
+## 📄 Example Practice
+# Step 1: Create a sample file
+mkdir -p day4_practice/linux_day4
+cd day4_practice/linux_day4
+echo -e "apple\nbanana\napple\norange\nbanana\napple" > fruits.txt
+
+# Step 2: Count unique fruits
+cat fruits.txt | sort | uniq -c
+
+# Step 3: Filter fruits containing 'a'
+grep 'a' fruits.txt
+
+# Step 4: Extract first column using cut (example)
+cut -d' ' -f1 fruits.txt
+
+# Step 5: Get first 2 lines
+head -n 2 fruits.txt
+
+# Step 6: Get last 2 lines
+tail -n 2 fruits.txt
+
+# Step 7: Count lines, words, characters
+wc fruits.txt
+
+# Step 8: Replace lowercase 'a' with '@'
+tr 'a' '@' < fruits.txt
+## 📌 Notes
+
+Pipes | allow chaining commands: cat fruits.txt | sort | uniq -c
+
+grep is case-sensitive by default; use -i for case-insensitive search
+
+Combine sort and uniq -c to count repeated items
+
+Always practice with small sample files before applying commands to real data
