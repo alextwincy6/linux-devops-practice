@@ -1,0 +1,38 @@
+# Day 4: Text Processing Essentials
+
+## Objective:
+Learn Linux text processing commands: grep, cut, sort, uniq, wc, tr, head, tail
+
+### Step 1: Prepare sample files
+- fruits.txt
+- data.csv
+
+### Step 2: Grep examples
+grep "apple" linux_day4/fruits.txt
+grep -v "apple" linux_day4/fruits.txt
+
+### Step 3: Cut examples
+cut -d',' -f1 linux_day4/data.csv
+cut -d',' -f2 linux_day4/data.csv
+
+### Step 4: Sort examples
+sort linux_day4/fruits.txt
+sort -r linux_day4/fruits.txt
+
+### Step 5: Uniq examples
+sort linux_day4/fruits.txt | uniq
+sort linux_day4/fruits.txt | uniq -c
+
+### Step 6: Word count
+wc linux_day4/fruits.txt
+wc -l linux_day4/fruits.txt
+
+### Step 7: Translate
+cat linux_day4/fruits.txt | tr 'a-z' 'A-Z'
+
+### Step 8: Head & Tail
+head -n 2 linux_day4/fruits.txt
+tail -n 2 linux_day4/fruits.txt
+
+### Tip:
+Combine commands using pipes | and save output to files.
