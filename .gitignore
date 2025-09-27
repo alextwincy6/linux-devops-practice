@@ -1,0 +1,35 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+*~
+
+# Backup and temp files
+*.bak
+*.tmp
+*.swp
+*.old
+
+# Log files
+*.log
+*.out
+
+# Linux command practice files you don't want tracked
+# (optional: if you want to ignore certain test files)
+# devops_day*/temp*
+# day3_practice/temp*
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.iml
+
+# Python cache (if you ever add Python scripts)
+__pycache__/
+*.pyc
+
+# Node.js (if used)
+node_modules/
+
+# Docker environment or overrides you don't want in repo
+*.env
+docker-compose.override.yml
