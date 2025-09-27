@@ -94,26 +94,26 @@ This folder documents my Day 2 hands-on learning for Linux file viewing and edit
 Learn Linux file permissions, ownership, and groups commands.
 
 ### Step 1: Create a file
--touch file1.txt
--ls -l file1.txt
+- touch file1.txt
+- ls -l file1.txt
 
 ### Step 2: Change file permissions
--chmod 700 file1.txt
--chmod 654 file1.txt
+- chmod 700 file1.txt
+- chmod 654 file1.txt
 
 ### Step 3: Check file permissions
--ls -l file1.txt
+- ls -l file1.txt
 
 ### Step 4: Change ownership
--sudo chown alex_injeti file1.txt
--sudo chown alex_injeti:test_group file1.txt
+- sudo chown alex_injeti file1.txt
+- sudo chown alex_injeti:test_group file1.txt
 
 ### Step 5: Change group only
--sudo chgrp test_group file1.txt
+- sudo chgrp test_group file1.txt
 
 ### Step 6: Verify owner and group
--ls -l file1.txt
--groups alex_injeti
+- ls -l file1.txt
+- groups alex_injeti
 
 ### Notes:
 - `r` = read, `w` = write, `x` = execute
