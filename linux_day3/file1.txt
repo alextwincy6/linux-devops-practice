@@ -1,4 +1,0 @@
-Day 3: File Permissions, Ownership, and Users
-
-Objective: Understand Linux file permissions, ownership, and basic user management.
- Learn to control access to files and directories.
